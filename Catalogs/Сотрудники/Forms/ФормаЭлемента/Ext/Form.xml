@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ДанныеОСотруднике" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные о сотруднике</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#000000</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные о сотруднике</v8:content>
+				</v8:item>
+			</ToolTip>
+			<BackColor>#CCFFFF</BackColor>
+			<ExtendedTooltip name="ДанныеОСотрудникеРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ДатаРождения" id="22">
+					<DataPath>Объект.ДатаРождения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="Ставка" id="16">
+					<DataPath>Объект.Ставка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтавкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СтавкаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ГрафикРаботы" id="13">
+					<DataPath>Объект.ГрафикРаботы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГрафикРаботыКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ГрафикРаботыРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Должность" id="10">
+					<DataPath>Объект.Должность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="СуммаЗарплаты" id="19">
+					<DataPath>Объект.СуммаЗарплаты</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СуммаЗарплатыКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СуммаЗарплатыРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ВремяРабот" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время работ</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#000000</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время работ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<BackColor>#FFFF99</BackColor>
+			<ExtendedTooltip name="ВремяРаботРасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<InputField name="ДатаПриёма" id="25">
+					<DataPath>Объект.ДатаПриёма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаПриёмаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ДатаПриёмаРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="OnChange">ДатаПриёмаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаУвольнения" id="28">
+					<DataPath>Объект.ДатаУвольнения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаУвольненияКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДатаУвольненияРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ДатаУвольненияПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#000000</TitleTextColor>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Page name="ГруппаГрафикРаботыТабл" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>График работы табл</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#000000</TitleTextColor>
+					<BackColor>#CCFFCC</BackColor>
+					<ExtendedTooltip name="ГруппаГрафикРаботыТаблРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Table name="ГрафикРаботыТабл" id="35">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ГрафикРаботыТабл</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ГрафикРаботыТаблКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="ГрафикРаботыТаблКоманднаяПанель" id="37"/>
+							<ExtendedTooltip name="ГрафикРаботыТаблРасширеннаяПодсказка" id="38"/>
+							<SearchStringAddition name="ГрафикРаботыТаблСтрокаПоиска" id="39">
+								<AdditionSource>
+									<Item>ГрафикРаботыТабл</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикРаботыТаблСтрокаПоискаКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ГрафикРаботыТаблСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГрафикРаботыТаблСостояниеПросмотра" id="42">
+								<AdditionSource>
+									<Item>ГрафикРаботыТабл</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикРаботыТаблСостояниеПросмотраКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ГрафикРаботыТаблСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГрафикРаботыТаблУправлениеПоиском" id="45">
+								<AdditionSource>
+									<Item>ГрафикРаботыТабл</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикРаботыТаблУправлениеПоискомКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ГрафикРаботыТаблУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ГрафикРаботыТаблНомерСтроки" id="48">
+									<DataPath>Объект.ГрафикРаботыТабл.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ГрафикРаботыТаблНомерСтрокиКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ГрафикРаботыТаблНомерСтрокиРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОбразование" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Образование</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#000000</TitleTextColor>
+					<BackColor>#CC99FF</BackColor>
+					<ExtendedTooltip name="ГруппаОбразованиеРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Table name="Образование" id="53">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Образование</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбразованиеКонтекстноеМеню" id="54"/>
+							<AutoCommandBar name="ОбразованиеКоманднаяПанель" id="55"/>
+							<ExtendedTooltip name="ОбразованиеРасширеннаяПодсказка" id="56"/>
+							<SearchStringAddition name="ОбразованиеСтрокаПоиска" id="57">
+								<AdditionSource>
+									<Item>Образование</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразованиеСтрокаПоискаКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ОбразованиеСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбразованиеСостояниеПросмотра" id="60">
+								<AdditionSource>
+									<Item>Образование</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразованиеСостояниеПросмотраКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ОбразованиеСостояниеПросмотраРасширеннаяПодсказка" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбразованиеУправлениеПоиском" id="63">
+								<AdditionSource>
+									<Item>Образование</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразованиеУправлениеПоискомКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ОбразованиеУправлениеПоискомРасширеннаяПодсказка" id="65"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбразованиеНомерСтроки" id="66">
+									<DataPath>Объект.Образование.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбразованиеНомерСтрокиКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ОбразованиеНомерСтрокиРасширеннаяПодсказка" id="68"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сотрудники</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

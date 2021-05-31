@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ДанныеОДоставке" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные о доставке</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#000000</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные о доставке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<BackColor>#CCFFFF</BackColor>
+			<ExtendedTooltip name="ДанныеОДоставкеРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО Клиента</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="АдресДоставки" id="7">
+					<DataPath>Объект.АдресДоставки</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="СрокиДоставки" id="10">
+					<DataPath>Объект.СрокиДоставки</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СрокиДоставкиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СрокиДоставкиРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Сотрудник" id="16">
+					<DataPath>Объект.Сотрудник</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ИтоговаяСуммаЗаказа" id="13">
+					<DataPath>Объект.ИтоговаяСуммаЗаказа</DataPath>
+					<TitleTextColor>#000000</TitleTextColor>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИтоговаяСуммаЗаказаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ИтоговаяСуммаЗаказаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<Table name="СоставДоставки" id="19">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.СоставДоставки</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СоставДоставкиКонтекстноеМеню" id="20"/>
+					<AutoCommandBar name="СоставДоставкиКоманднаяПанель" id="21"/>
+					<ExtendedTooltip name="СоставДоставкиРасширеннаяПодсказка" id="22"/>
+					<SearchStringAddition name="СоставДоставкиСтрокаПоиска" id="23">
+						<AdditionSource>
+							<Item>СоставДоставки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставДоставкиСтрокаПоискаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="СоставДоставкиСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СоставДоставкиСостояниеПросмотра" id="26">
+						<AdditionSource>
+							<Item>СоставДоставки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставДоставкиСостояниеПросмотраКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="СоставДоставкиСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СоставДоставкиУправлениеПоиском" id="29">
+						<AdditionSource>
+							<Item>СоставДоставки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СоставДоставкиУправлениеПоискомКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="СоставДоставкиУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="СоставДоставкиНомерСтроки" id="32">
+							<DataPath>Объект.СоставДоставки.LineNumber</DataPath>
+							<TitleTextColor>#000000</TitleTextColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоставДоставкиНомерСтрокиКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СоставДоставкиНомерСтрокиРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<InputField name="СоставДоставкиНазвание" id="35">
+							<DataPath>Объект.СоставДоставки.Название</DataPath>
+							<TitleTextColor>#000000</TitleTextColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоставДоставкиНазваниеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СоставДоставкиНазваниеРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="СоставДоставкиКоличество" id="38">
+							<DataPath>Объект.СоставДоставки.Количество</DataPath>
+							<TitleTextColor>#000000</TitleTextColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоставДоставкиКоличествоКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="СоставДоставкиКоличествоРасширеннаяПодсказка" id="40"/>
+							<Events>
+								<Event name="OnChange">СоставДоставкиКоличествоПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СоставДоставкиЦенаЗаЕд" id="41">
+							<DataPath>Объект.СоставДоставки.ЦенаЗаЕд</DataPath>
+							<TitleTextColor>#000000</TitleTextColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоставДоставкиЦенаЗаЕдКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СоставДоставкиЦенаЗаЕдРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">СоставДоставкиЦенаЗаЕдПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СоставДоставкиСумма" id="44">
+							<DataPath>Объект.СоставДоставки.Сумма</DataPath>
+							<TitleTextColor>#000000</TitleTextColor>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СоставДоставкиСуммаКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СоставДоставкиСуммаРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">СоставДоставкиСуммаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Доставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

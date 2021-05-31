@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Официант" id="38">
+			<DataPath>Объект.Официант</DataPath>
+			<ContextMenu name="ОфициантКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ОфициантРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="НомерСтола" id="4">
+			<DataPath>Объект.НомерСтола</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерСтолаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НомерСтолаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИтоговаяСуммаЗаказа" id="7">
+			<DataPath>Объект.ИтоговаяСуммаЗаказа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИтоговаяСуммаЗаказаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИтоговаяСуммаЗаказаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Заказ" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Заказ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ЗаказКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ЗаказСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Заказ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаказСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ЗаказСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗаказСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Заказ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаказСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ЗаказСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗаказУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Заказ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаказУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ЗаказУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗаказНомерСтроки" id="23">
+					<DataPath>Объект.Заказ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаказНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗаказНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ЗаказНазвание" id="26">
+					<DataPath>Объект.Заказ.Название</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаказНазваниеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЗаказНазваниеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ЗаказКоличество" id="29">
+					<DataPath>Объект.Заказ.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаказКоличествоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЗаказКоличествоРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ЗаказКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЗаказЦенаЗаЕд" id="32">
+					<DataPath>Объект.Заказ.ЦенаЗаЕд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаказЦенаЗаЕдКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЗаказЦенаЗаЕдРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ЗаказЦенаЗаЕдПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЗаказСумма" id="35">
+					<DataPath>Объект.Заказ.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаказСуммаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗаказСуммаРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ЗаказСуммаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Заказ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
